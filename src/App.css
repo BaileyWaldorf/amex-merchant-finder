@@ -1,33 +1,216 @@
-.App {
+body {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
+  display: block;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+h5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  transition: all 750ms cubic-bezier(.02, .01, .47, 1);
+}
+
+.header {
+    text-align: center;
+    transition: all 750ms cubic-bezier(.02, .01, .47, 1);
+    margin-top: 20%;
+}
+
+.header-submit {
+  display: block;
+  position: absolute;
+  top: 5%;
+  text-align: center;
+  transition: all 750ms cubic-bezier(.02, .01, .47, 1);
+}
+
+
+.autocomplete-dropdown-container {
+  margin-top: 20px;
+  width: 600px;
+}
+
+
+.location-search-input {
+  outline-width: 0;
+  border-width: 1px;
+  border-color: #AAAAAA; 
+  border-style: solid;
+  border-radius: 30px;
+  width: 500px;
+  height: 5%;
+  padding: 15px;
+  background-color: white;
+  transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.merchant-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 28%;
+  left: 0;
+  padding: 40px;
+  width: 50vw;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 18%;
+  left: 0;
+  padding: 55px;
+  width: 50vw;
+  overflow: hidden;
+}
+
+.stats-container {
+  position: absolute;
+  text-align: left;
+  top: 25%;
+  right: 0;
+  padding: 55px;
+  width: 40vw;
+  overflow: hidden;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 18%;
+  right: 0;
+  padding: 55px;
+  width: 40vw;
+  overflow: hidden;
+}
+
+.card {
+  text-align: left;
+  margin: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  width: 400px !important;
+  border-radius: 20px;
+  box-shadow: 0 2px 44px 0 rgba(0,0,0,0.14);
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.16);
+  transform: translate(0px, -6px) !important;
+  transition-delay: 0s !important;
+}
+
+.address {
+  font-weight: 500;
+}
+
+.phone {
+  font-weight: 300;
+}
+
+.name {
+  float: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.distance {
+  font-weight: 300;
+  float: right;
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+}
+
+.center-image:hover {
+  transform: translate(0px, -6px) !important;
+  transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+}
+
+.div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 100px;
+  border: 2px solid white;
+}
+.div:before,
+.div:after, .span {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #287ec6;
+  animation: glow-grow 2s ease-out infinite;
+}
+.div:after {
+  animation-delay: .66s;
+}
+.span{
+  animation-delay: 1.33s;
   }
-  to {
-    transform: rotate(360deg);
+@keyframes glow-grow {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
   }
 }
