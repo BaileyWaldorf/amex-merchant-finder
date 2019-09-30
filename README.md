@@ -1,7 +1,7 @@
 # Amex Merchant Finder
 A fast way to see what nearby places accept American Express cards.
 
-![demo](https://github.com/BaileyWaldorf/amex-merchant-finder/blob/master/static/readme.png)
+[![demo](https://github.com/BaileyWaldorf/amex-merchant-finder/blob/master/static/readme.png)](https://github.com/BaileyWaldorf/amex-merchant-finder)
 
 ## Getting Started
 1.  Clone repository
